@@ -4,7 +4,6 @@ from jumo_coding_question.config import Config
 
 
 class TestConfigAttributes(TestCase):
-
     def setUp(self):
         self.configurations = Config()
 

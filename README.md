@@ -27,3 +27,8 @@ MSISDN,Network,Date,Product,Amount
 27725678534,'Network 2','15-Apr-2016','Loan Product 3',1747.00
 27729554427,'Network 1','16-Apr-2016','Loan Product 2',1801.00
 ```
+
+## Assumptions
+
+* The csv file will always be consistent ie have same number of colmns and
+  have same type of data.
