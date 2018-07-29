@@ -16,6 +16,7 @@ and outputs into a CSV file Output.csv
 
 ## Loans.csv
 
+```
 MSISDN,Network,Date,Product,Amount
 27729554427,'Network 1','12-Mar-2016','Loan Product 1',1000.00
 27722342551,'Network 2','16-Mar-2016','Loan Product 1',1122.00
@@ -25,3 +26,4 @@ MSISDN,Network,Date,Product,Amount
 27723453455,'Network 3','12-Apr-2016','Loan Product 3',1928.00
 27725678534,'Network 2','15-Apr-2016','Loan Product 3',1747.00
 27729554427,'Network 1','16-Apr-2016','Loan Product 2',1801.00
+```
