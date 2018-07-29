@@ -1,0 +1,12 @@
+!.coveragerc
+!.env
+!.pylintrc
+
+.git/
+
+logs/
+
+*.pyc
+*.swp
+
+__pycache__/
