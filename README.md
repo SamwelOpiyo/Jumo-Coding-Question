@@ -52,6 +52,14 @@ Clone the repository into a directory of your own choice.
 
 ### Running locally
 
+Run Tests
+
+`python setup.py test`
+
+Install Project
+
+`pip install -e .`
+
 Create logs, input and output directories eg
 
 `mkdir /Jumo/logs/ /Jumo/outputs/ /Jumo/inputs`
@@ -67,14 +75,6 @@ Set environment variables
 `export INPUTS_DIRECTORY="/Jumo/inputs/"`
 
 `export OUTPUTS_DIRECTORY="/Jumo/outputs/"`
-
-Run Tests
-
-`python setup.py test`
-
-Install Project
-
-`pip install -e .`
 
 Run project
 
