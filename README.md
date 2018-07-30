@@ -32,3 +32,49 @@ MSISDN,Network,Date,Product,Amount
 
 * The csv file will always be consistent ie have same number of colmns and
   have same type of data.
+
+
+## Running the Project
+
+### Requirements
+
+- Docker
+- Docker-compose
+- Git
+- Python3
+
+### Download the Project
+
+Clone the repository into a directory of your own choice.
+
+`git clone https://github.com/SamwelOpiyo/Jumo-Coding-Question.git`
+
+`cd Jumo-Coding-Question`
+
+### Running locally
+
+Create logs, input and output directories eg
+
+- mkdir /Jumo/logs/ /Jumo/outputs/ /Jumo/inputs
+
+Copy input files to input directory
+
+- cp inputs/ /Jumo/inputs/
+
+Set environment variables
+
+`export LOGS_DIRECTORY="/Jumo/logs/"`
+`export INPUTS_DIRECTORY="/Jumo/inputs/"`
+'export OUTPUTS_DIRECTORY="/Jumo/outputs/"'
+
+Install Project
+
+`pip install -e .`
+
+Run project
+
+`jumo_coding_question`
+
+
+
+### Starting the server

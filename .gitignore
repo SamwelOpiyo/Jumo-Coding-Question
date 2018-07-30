@@ -236,5 +236,5 @@ africa_produce_insights_web_application/media/
 .pylintrc
 
 logs/
-inputs/
+# inputs/
 outputs/
