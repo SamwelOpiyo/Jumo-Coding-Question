@@ -21,21 +21,23 @@ class CreateDictFromCSVData(object):
     def split_columns(cls, csv_lines):
         # get and parse the column headers
         head = (
-            csv_lines[0][:-1]
-            .replace("'", "")
-            .replace("\r", "")
-            .replace("\n", "")
-            .replace("\r\n", "")
-            .split(",")
+            csv_lines[0][:-1].replace("'", "").replace("\r", "").replace(
+                "\n", ""
+            ).replace(
+                "\r\n", ""
+            ).split(
+                ","
+            )
         )
         # get and parse the column data
         data = [
-            each[:-1]
-            .replace("'", "")
-            .replace("\r", "")
-            .replace("\n", "")
-            .replace("\r\n", "")
-            .split(",")
+            each[:-1].replace("'", "").replace("\r", "").replace(
+                "\n", ""
+            ).replace(
+                "\r\n", ""
+            ).split(
+                ","
+            )
             for each in csv_lines[1:]
         ]
 
@@ -57,6 +59,7 @@ class CreateDictFromCSVData(object):
 
 
 class AnalyzeData(object):
+
     def __init__(self, row_dictionaries):
         self.row_dictionaries = AnalyzeData.get_months(row_dictionaries)
         self.unique_combinations = AnalyzeData.get_unique_combinations(
@@ -112,7 +115,11 @@ class AnalyzeData(object):
                     )
                     list_unique_combinations[unique][
                         4
-                    ] = list_unique_combinations[unique][4] + float(
+                    ] = list_unique_combinations[
+                        unique
+                    ][
+                        4
+                    ] + float(
                         each["Amount"]
                     )
         unique_combinations_updated = [

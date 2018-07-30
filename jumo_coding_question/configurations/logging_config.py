@@ -26,14 +26,10 @@ def get_logging_configuration(config_object):
         },
         "loggers": {
             "error_logging": {
-                "level": "ERROR",
-                "handlers": ["file"],
-                "propagate": True,
+                "level": "ERROR", "handlers": ["file"], "propagate": True
             },
             "debug_logging": {
-                "level": "DEBUG",
-                "handlers": ["console"],
-                "propagate": True,
+                "level": "DEBUG", "handlers": ["console"], "propagate": True
             },
         },
     }

@@ -68,6 +68,10 @@ Set environment variables
 
 `export OUTPUTS_DIRECTORY="/Jumo/outputs/"`
 
+Run Tests
+
+`python setup.py test`
+
 Install Project
 
 `pip install -e .`
@@ -75,3 +79,5 @@ Install Project
 Run project
 
 `jumo_coding_question`
+
+Check the outputs directory to view the csv file generated, Ouput.csv.
