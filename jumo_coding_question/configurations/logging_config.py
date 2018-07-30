@@ -1,8 +1,8 @@
 import logging.config
-from jumo_coding_question.config import Config
 
-logging.config.dictConfig(
-    {
+
+def get_logging_configuration(config_object):
+    DEFAULT_LOGGING = {
         "version": 1,
         "disable_existing_loggers": False,
         "formatters": {
@@ -18,9 +18,10 @@ logging.config.dictConfig(
                 "formatter": "verbose",
             },
             "file": {
-                "level": "Error",
+                "level": "ERROR",
                 "class": "logging.FileHandler",
-                "filename": Config.LOGS_DIRECTORY + "/error_logs",
+                "filename": config_object.LOGS_DIRECTORY + "/error_logs",
+                "formatter": "verbose",
             },
         },
         "loggers": {
@@ -31,9 +32,9 @@ logging.config.dictConfig(
             },
             "debug_logging": {
                 "level": "DEBUG",
-                "handlers": ["cosole"],
+                "handlers": ["console"],
                 "propagate": True,
             },
         },
     }
-)
+    return DEFAULT_LOGGING

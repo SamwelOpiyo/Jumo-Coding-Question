@@ -19,7 +19,7 @@ class TestCreateDictFromCSVData(TestCase):
             ],
         )
 
-    def test_dictify_column_head_and_columns(self):
+    def test_split_columns(self):
         csv_file_data = ["Name,ID\n", "James,18712\n", "John,209928\n"]
         self.assertTupleEqual(
             CreateDictFromCSVData.split_columns(csv_file_data),

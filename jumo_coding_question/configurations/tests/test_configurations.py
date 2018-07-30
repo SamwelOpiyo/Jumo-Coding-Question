@@ -1,6 +1,6 @@
 from unittest import TestCase
 
-from jumo_coding_question.config import Config
+from jumo_coding_question.configurations import Config
 
 
 class TestConfigAttributes(TestCase):

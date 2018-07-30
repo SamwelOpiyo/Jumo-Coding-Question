@@ -1,5 +1,5 @@
-import jumo_coding_question
+from jumo_coding_question.project import run
 
 
 def main():
-    print(jumo_coding_question.main())
+    run()

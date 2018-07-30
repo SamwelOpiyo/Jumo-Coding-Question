@@ -7,7 +7,7 @@ def readme():
 
 
 setup(
-    name="samwel_jumo_coding_question",
+    name="jumo_coding_question",
     version="0.1.0",
     description="Project for aggregating loan csv files.",
     long_description=readme(),
@@ -27,7 +27,7 @@ setup(
     tests_require=["nose"],
     entry_points={
         "console_scripts": [
-            "jumo_coding_question-main=jumo_coding_question.command_line:main"
+            "jumo_coding_question=jumo_coding_question.command_line:main"
         ]
     },
     include_package_data=True,
