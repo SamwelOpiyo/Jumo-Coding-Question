@@ -81,3 +81,15 @@ Run project
 `jumo_coding_question`
 
 Check the outputs directory to view the csv file generated, Ouput.csv.
+
+For the csv file above, the output data will be:
+```
+Count,Aggregated Amount,Product,Network,Month
+1,1000.0,Loan Product 1,Network 1,Mar
+1,1122.0,Loan Product 1,Network 2,Mar
+2,5182.0,Loan Product 2,Network 3,Mar
+1,5671.0,Loan Product 1,Network 2,Apr
+1,1928.0,Loan Product 3,Network 3,Apr
+1,1747.0,Loan Product 3,Network 2,Apr
+1,1801.0,Loan Product 2,Network 1,Apr
+```
