@@ -8,8 +8,8 @@ from jumo_coding_question.Utils.data_actions import (
 
 class TestCreateDictFromCSVData(TestCase):
     """
-    Test cases for parsing read csv file and creating a list of row_dictionaries
-    from it.
+    Test cases for parsing read csv file and creating a list of
+    row_dictionaries from it.
     """
 
     def test_dictify_column_head_and_columns(self):

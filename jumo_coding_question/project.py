@@ -2,7 +2,9 @@ import logging.config
 import sys
 
 from jumo_coding_question.configurations import Config
-from jumo_coding_question.configurations.logging_config import get_logging_configuration
+from jumo_coding_question.configurations.logging_config import (
+    get_logging_configuration
+)
 from jumo_coding_question.Utils import file_actions, data_actions
 
 
@@ -23,7 +25,7 @@ def run(args=None):
         config_instance.INPUTS_DIRECTORY + "Loans.csv"
     )
 
-    if file_contents == None:
+    if file_contents is None:
         logging.debug("Could not read file!")
         quit()
 

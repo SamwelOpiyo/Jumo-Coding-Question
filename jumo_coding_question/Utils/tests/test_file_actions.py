@@ -61,9 +61,6 @@ class TestCSVFileWrite(TestCase):
             written_data, ["1,3\n", "233,23432\n", "23432,21332123\n"]
         )
 
-    def test_setup(self):
-        self.assertTrue(os.path.isfile(self.tempfile_))
-
     def test_writing_of_non_existent_file(self):
         file_ = os.path.join(tempfile.gettempdir(), "/nslkjew/test.txt")
         self.assertTrue(CSVFileWrite.writefile(file_, "Hello World!"))
