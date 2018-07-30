@@ -29,11 +29,13 @@ def run(args=None):
         logging.debug("Could not read file!")
         quit()
 
-    data_items = data_actions.CreateDictFromCSVData.CSVDataToDict(
+    data_items = data_actions.CreateDictFromCSVData.ListTupleDataToDict(
         file_contents
     )
     logging.debug(data_items)
-    print(data_items)
+    analysis_instance = data_actions.AnalyzeData(data_items)
+    analysis_results = analysis_instance.analyze()
+    print(analysis_results)
 
 
 if __name__ == "__main__":

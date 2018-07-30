@@ -30,9 +30,13 @@ MSISDN,Network,Date,Product,Amount
 
 ## Assumptions
 
-* The csv file will always be consistent ie have same number of colmns and
+* The csv file to be provided is consistent ie have same number of columns and
   have same type of data.
 
+* The columns in the csv file to be provided end with "\n" and column head row
+  "\r"
+
+* The dates in the csv file to be provided are only for two months.
 
 ## Running the Project
 
@@ -65,7 +69,7 @@ Set environment variables
 
 `export INPUTS_DIRECTORY="/Jumo/inputs/"`
 
-'export OUTPUTS_DIRECTORY="/Jumo/outputs/"'
+`export OUTPUTS_DIRECTORY="/Jumo/outputs/"`
 
 Install Project
 
