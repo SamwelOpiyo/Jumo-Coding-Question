@@ -20,10 +20,23 @@ class CreateDictFromCSVData(object):
     @classmethod
     def split_columns(cls, csv_lines):
         # get and parse the column headers
-        head = csv_lines[0][:-1].replace("\r", "").split(",")
+        head = (
+            csv_lines[0][:-1]
+            .replace("'", "")
+            .replace("\r", "")
+            .replace("\n", "")
+            .replace("\r\n", "")
+            .split(",")
+        )
         # get and parse the column data
         data = [
-            each[:-1].replace("'", "").split(",") for each in csv_lines[1:]
+            each[:-1]
+            .replace("'", "")
+            .replace("\r", "")
+            .replace("\n", "")
+            .replace("\r\n", "")
+            .split(",")
+            for each in csv_lines[1:]
         ]
 
         return head, data
@@ -102,7 +115,9 @@ class AnalyzeData(object):
                     ] = list_unique_combinations[unique][4] + float(
                         each["Amount"]
                     )
-        unique_combinations_updated = map(tuple, list_unique_combinations)
+        unique_combinations_updated = [
+            tuple(each) for each in list_unique_combinations
+        ]
         return (
             unique_combinations_updated,
             ("Product", "Network", "Month", "Count", "Aggregated Amount"),

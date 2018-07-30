@@ -152,7 +152,9 @@ class TestAnalyzeData(TestCase):
             ("M-Banking", "Y-network", "Apr", 0, 0),
         ]
         self.assertTupleEqual(
-            AnalyzeData.aggregate(updated_row_dictionaries, unique_combinations),
+            AnalyzeData.aggregate(
+                updated_row_dictionaries, unique_combinations
+            ),
             (
                 [
                     ("M-Banking", "Z-network", "Mar", 2, 3000),
